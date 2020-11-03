@@ -26,6 +26,8 @@
     "post-update": "yarn upgrade --latest"
   },
   "devDependencies": {
+    "@fullcalendar/core": "^5.3.1",
+    "@fullcalendar/daygrid": "^5.3.2",
     "@nuxt/typescript-build": "latest"
   },
   "keywords": [],

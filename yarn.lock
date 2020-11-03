@@ -827,6 +827,30 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
+"@fullcalendar/common@~5.3.1":
+  version "5.3.1"
+  resolved "https://registry.yarnpkg.com/@fullcalendar/common/-/common-5.3.1.tgz#9193032cf88f12ebcd8337ef6e98b23fbbbf04ca"
+  integrity sha512-2PREEpiFQSDN5MNdoD/OkpJ+d7FPtN2TwTJMsuq3fTjmj3nM+utrxBmUr9a2F6WWW1X+xGU5nHQA52vhqIiQOQ==
+  dependencies:
+    tslib "^2.0.0"
+
+"@fullcalendar/core@^5.3.1":
+  version "5.3.1"
+  resolved "https://registry.yarnpkg.com/@fullcalendar/core/-/core-5.3.1.tgz#183140648e4c07a452e10a13259768406065329f"
+  integrity sha512-CqcpMimyuTf4DI+s1Se9bjVQMa2PDGtTBj8CYaCf8nSu+Wc6/RoimhIiA5bDTyg4KQFqXFT8ojt1avC05ZBvgg==
+  dependencies:
+    "@fullcalendar/common" "~5.3.1"
+    preact "^10.0.5"
+    tslib "^2.0.0"
+
+"@fullcalendar/daygrid@^5.3.2":
+  version "5.3.2"
+  resolved "https://registry.yarnpkg.com/@fullcalendar/daygrid/-/daygrid-5.3.2.tgz#c12160fb76729f13dc423c0db12664969ef01af0"
+  integrity sha512-BK+YIecF3q9d/+6lAnf6WiJEEs7Wpa/mu9gXpkEf8vn4nl2bicPHUwykg5dUMCBy7ADAkDoL7VuBVi0XBRtPYw==
+  dependencies:
+    "@fullcalendar/common" "~5.3.1"
+    tslib "^2.0.0"
+
 "@fullhuman/postcss-purgecss@^2.1.2":
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/@fullhuman/postcss-purgecss/-/postcss-purgecss-2.3.0.tgz#50a954757ec78696615d3e118e3fee2d9291882e"
@@ -7129,6 +7153,11 @@ postcss@^6.0.9:
     chalk "^2.4.1"
     source-map "^0.6.1"
     supports-color "^5.4.0"
+
+preact@^10.0.5:
+  version "10.5.5"
+  resolved "https://registry.yarnpkg.com/preact/-/preact-10.5.5.tgz#c6c172ca751df27483350b8ab622abc12956e997"
+  integrity sha512-5ONLNH1SXMzzbQoExZX4TELemNt+TEDb622xXFNfZngjjM9qtrzseJt+EfiUu4TZ6EJ95X5sE1ES4yqHFSIdhg==
 
 prelude-ls@^1.2.1:
   version "1.2.1"

@@ -1,18 +1,29 @@
 <template lang="pug">
   div
-    p.text-red-700 {{ message }}
-    button(class='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded') button
+    div.calendar(ref="calendarRef")
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from '@vue/composition-api'
+import { defineComponent, onMounted, ref } from '@vue/composition-api'
+import { Calendar } from '@fullcalendar/core'
+import dayGridPlugin from '@fullcalendar/daygrid'
 
 export default defineComponent({
   setup() {
-    const message = ref('This is a message')
+
+    const calendarRef = ref<HTMLDivElement | null>(null)
+
+    onMounted(() => {
+      console.log(calendarRef.value)
+      const calendar = new Calendar(calendarRef.value, {
+        plugins: [dayGridPlugin]
+      })
+
+      calendar.render()
+    })
 
     return {
-      message
+      calendarRef
     }
   }
 })
