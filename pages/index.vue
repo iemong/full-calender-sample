@@ -14,7 +14,7 @@ export default defineComponent({
     const calendarRef = ref<HTMLDivElement | null>(null)
 
     onMounted(() => {
-      console.log(calendarRef.value)
+      if (!calendarRef.value) return
       const calendar = new Calendar(calendarRef.value, {
         plugins: [dayGridPlugin]
       })
